@@ -3,9 +3,11 @@ import '../styles/index.css';
 
 function HomePage()
 {
-    return(
-        <div>
-            <h1>hello there</h1>
+    return (
+        <div class="HomePage">
+            <div id="HomeTop">
+                <h1>Welcome friends</h1>
+            </div>
         </div>
     );
 }

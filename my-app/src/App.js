@@ -4,11 +4,13 @@ import './App.css';
 
 import HomePage from './pages/HomePage';
 
+const URL = "/portfolio-website";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/portfolio-website/" element={<HomePage/>}/>
       </Routes>
     </BrowserRouter>
   );
