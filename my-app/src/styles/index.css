@@ -1,8 +1,38 @@
 
 :root {
-    cambridge-blue: #87b38d;
-    claret: #8b1e3f;
-    dark-purple: #3C153B;
-    vermilion: #DB4C40;
-    dark-slate: #1C5253;
+    --cambridge-blue: #87b38d;
+    --claret: #8b1e3f;
+    --dark-purple: #3C153B;
+    --vermilion: #DB4C40;
+    --dark-slate: #1C5253;
+}
+
+.HomePage {
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#HomeTop {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HomeTwo {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HomeTwo h1 {
+    color: white;
 }
