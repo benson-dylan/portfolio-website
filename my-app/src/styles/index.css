@@ -5,6 +5,7 @@
     --dark-purple: #3C153B;
     --vermilion: #DB4C40;
     --dark-slate: #1C5253;
+    --my-black: #141313;
 }
 
 .HomePage {
@@ -18,20 +19,74 @@
     max-height: 100vh;
     width: 100%;
     background-color: whitesmoke;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#HomeTop h1 {
+    position: relative;
+    top: 42vh;
+}
+
+#offcanvas-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--claret);
+    color: white;
+}
+
+#homepage-offcanvas {
+    background-color: var(--my-black) !important;
+    color: white;
+    width: 25%;
+}
+
+#homepage-offcanvas .btn-close {
+    filter: invert(1);
+    padding: 20px 20px;
 }
 
 #HomeTwo {
     min-height: 100vh;
     max-height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--my-black);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.HomePageCard {
+    width: 30vh;
+    background-color: var(--vermilion);
+}
+
+#cardButton {
+    max-width: 6vw;
+    margin: 15px 15px;
+    margin-top: -5px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--dark-slate);
+    color: white;
+}
+
+#CardHolder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
 
 #HomeTwo h1 {
     color: white;

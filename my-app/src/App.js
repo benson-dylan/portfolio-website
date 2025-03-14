@@ -3,14 +3,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/HomePage';
+import ELLEvation from './pages/ELLEvation';
 
-const URL = "/portfolio-website";
+const prefix = "/portfolio-website";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/portfolio-website/" element={<HomePage/>}/>
+        <Route path={prefix + "/"} element={<HomePage/>}/>
+        <Route path={prefix + "/ELLEvation"} element={<ELLEvation/>}/>
       </Routes>
     </BrowserRouter>
   );
