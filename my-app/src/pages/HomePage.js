@@ -1,13 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import * as motion from "motion/react-client";
 
 import luffyImg from "../images/luffypfp.jpg";
 import appleCat from "../images/applecat.jpg";
 import jacketMonkey from "../images/monkeyJacket.avif";
+import fish from "../images/fish.png";
 
 import '../styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,27 +25,76 @@ function HomePage()
 
     const navigate = useNavigate();
 
+    const homeRef = useRef(null);
+    const projectRef = useRef(null);
+
+    const handleScroll = (ref) => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <div className="HomePage">
-            <div id="HomeTop">
+            <div id="HomeTop" ref={homeRef}>
                 <motion.button
                     id="offcanvas-button"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onHoverStart={() => console.log('hover started!')}
                     onClick={handleOpen}
                 >
                     Open
                 </motion.button>
+                <h1>Welcome gamers</h1>
+            </div>
+            <div>
                 <Offcanvas id="homepage-offcanvas" show={show} onHide={handleClose} placement="end" scroll="true">
                     <Offcanvas.Header closeButton />
                     <Offcanvas.Body>
-                        Placeholder YAY!!!
+                        <motion.div 
+                            id="offcanvas-items"
+                            initial={{opacity:0, x:150}}
+                            animate={{opacity:1, x:0}}
+                            transition={{delay: 0.2, duration:0.4, type:"tween"}}    
+                        >
+                            <motion.button 
+                                className="offcanvas-item" 
+                                whileHover={{scale:1.3}}
+                                whileTap={{scale: 1.0}}
+                                onClick={() => handleScroll(homeRef)}
+                            >
+                                Home
+                            </motion.button>
+                            <motion.button 
+                                className="offcanvas-item" 
+                                whileHover={{scale:1.3}}
+                                whileTap={{scale: 1.0}}
+                                onClick={() => handleScroll(projectRef)}
+                            >
+                            Projects
+                            </motion.button>
+                            <motion.button 
+                                className="offcanvas-item" 
+                                whileHover={{scale:1.3}}
+                                whileTap={{scale: 1.0}}
+                            >
+                            About Me
+                            </motion.button>
+                            <div id="socialDiv">
+                                <motion.button src={fish}>
+                                    [___]
+                                </motion.button>
+                                <motion.button>
+                                    [___]
+                                </motion.button>
+                                <motion.button>
+                                    [___]
+                                </motion.button>
+                            </div>
+                        </motion.div>
                     </Offcanvas.Body>
                 </Offcanvas>
-                <h1>Welcome gamers</h1>
             </div>
-            <div id="HomeTwo">
+            <div id="HomeTwo" ref={projectRef}>
+                <h1>My Projects</h1>
                 <div id="CardHolder">
                     <Card className="HomePageCard"  style={ {backgroundColor: "white"} }>
                         <Card.Img variant="top" src={luffyImg}/>
