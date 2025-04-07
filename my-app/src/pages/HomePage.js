@@ -6,10 +6,14 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import * as motion from "motion/react-client";
 
+import NavigationBar from '../components/navbar';
+
 import luffyImg from "../images/luffypfp.jpg";
 import appleCat from "../images/applecat.jpg";
 import jacketMonkey from "../images/monkeyJacket.avif";
 import fish from "../images/fish.png";
+import linkedIn from "../images/linkedin.png";
+import github from "../images/github-grey.png";
 
 import '../styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,14 +31,21 @@ function HomePage()
 
     const homeRef = useRef(null);
     const projectRef = useRef(null);
+    const aboutRef = useRef(null);
 
     const handleScroll = (ref) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
     };
 
+    const handleSocialClick = (url) =>
+    {
+        window.open(url);
+    }
+
     return (
         <div className="HomePage">
             <div id="HomeTop" ref={homeRef}>
+                <NavigationBar/>
                 <motion.button
                     id="offcanvas-button"
                     whileHover={{ scale: 1.1 }}
@@ -75,18 +86,26 @@ function HomePage()
                                 className="offcanvas-item" 
                                 whileHover={{scale:1.3}}
                                 whileTap={{scale: 1.0}}
+                                onClick={() => handleScroll(aboutRef)}
                             >
                             About Me
                             </motion.button>
                             <div id="socialDiv">
-                                <motion.button src={fish}>
-                                    [___]
+                                <motion.button 
+                                    className="socialButton"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale: 1.0}}
+                                    onClick={() => handleSocialClick("https://www.linkedin.com/in/dylan-benson2/")}
+                                >
+                                    <img className="socialIcon" alt="LinkedIn Icon" src={linkedIn}/>
                                 </motion.button>
-                                <motion.button>
-                                    [___]
-                                </motion.button>
-                                <motion.button>
-                                    [___]
+                                <motion.button 
+                                    className="socialButton"
+                                    whileHover={{scale:1.3}}
+                                    whileTap={{scale: 1.0}}
+                                    onClick={() => handleSocialClick("https://github.com/benson-dylan")}
+                                >
+                                    <img className="socialIcon" alt="Github Icon" src={github}/>
                                 </motion.button>
                             </div>
                         </motion.div>
@@ -108,7 +127,7 @@ function HomePage()
                             id="cardButton" 
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => navigate(prefix + "/ELLEvation")}>
+                            onClick={() => navigate(prefix + "/projects/ellevation")}>
                             Find it now
                         </motion.button>
                     </Card>
@@ -143,6 +162,9 @@ function HomePage()
                         </motion.button>
                     </Card>
                 </div>
+            </div>
+            <div id="HomeThree" ref={aboutRef}>
+                <h1>About Me</h1>
             </div>
         </div>
     );

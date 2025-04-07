@@ -32,6 +32,43 @@
     font-family: "Outfit", sans-serif;
 }
 
+#HomeTwo {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: var(--my-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#HomeTwo h1 {
+    font-size: 40pt;
+    margin-top: -5%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+#HomeThree {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#HomeThree h1 {
+    font-size: 40pt;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
 #offcanvas-button {
     position: fixed;
     top: 10px;
@@ -76,24 +113,6 @@
     transition: 0.5;
 }
 
-#HomeTwo {
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-    background-color: var(--my-black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-#HomeTwo h1 {
-    font-size: 40pt;
-    margin-top: -5%;
-    margin-bottom: 3%;
-}
-
 .HomePageCard {
     width: 30vh;
     background-color: var(--vermilion);
@@ -119,7 +138,40 @@
     flex-wrap: wrap;
 }
 
+#socialDiv {
+    margin-top: 3%;
+}
 
-#HomeTwo h1 {
-    color: white;
+.socialButton {
+    background-color: transparent;
+    border: none;
+}
+
+.socialIcon {
+    width: 48px;
+    height:48px;
+}
+
+/*
+    MARK: Navigation Bar
+*/
+
+.navBar
+{
+    width: 100%;
+    height: 6vh;
+    background-color: whitesmoke;
+    border-bottom: #141313;
+    border-width: 2px;
+}
+
+
+
+/*
+    MARK: Project Page 
+*/
+
+#ProjectPage {
+    background-color: var(--cambridge-blue);
+    height: 100vh;
 }

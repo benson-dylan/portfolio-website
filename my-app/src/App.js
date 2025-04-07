@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/HomePage';
+import ProjectPage from './pages/Projects';
 import ELLEvation from './pages/ELLEvation';
 import fish from './images/fish.png';
 
@@ -20,7 +21,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path={prefix + "/"} element={<HomePage/>}/>
-            <Route path={prefix + "/ELLEvation"} element={<ELLEvation/>}/>
+            <Route path={prefix + "/projects"} element={<ProjectPage/>}/>
+            <Route path={prefix + "/projects/ellevation"} element={<ELLEvation/>}/>
           </Routes>
         </BrowserRouter>
       </html>
