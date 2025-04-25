@@ -54,7 +54,7 @@ function HomePage()
                 >
                     Open
                 </motion.button>
-                <h1>Welcome gamers</h1>
+                <h1>Welcome</h1>
             </div>
             <div>
                 <Offcanvas id="homepage-offcanvas" show={show} onHide={handleClose} placement="end" scroll="true">

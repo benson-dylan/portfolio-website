@@ -165,6 +165,18 @@
     border-width: 2px;
 }
 
+.navBar .navCenter
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14pt;
+}
+
 
 
 /*

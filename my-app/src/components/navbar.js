@@ -11,17 +11,28 @@ function NavigationBar()
     return(
         <Navbar className="navBar" fixed="top" expand="lg">
             <Container>
-                <Navbar.Brand href={prefix + "/"}>Dylan Benson</Navbar.Brand>
-                <Nav>
-                    <Nav.Item as="li">
-                        <Nav.Link href={prefix + "/"}>Home</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                <NavDropdown title="Projects">
-                    <NavDropdown.Item href={prefix + "/projects"}>
-                        Project
-                    </NavDropdown.Item>
-                </NavDropdown>
+                <Navbar.Brand href={prefix + "/"} style={{fontSize:'16pt'}}>Dylan Benson</Navbar.Brand>
+                <div className="navCenter">
+                    <Nav>
+                        <Nav.Item as="li" style={{marginRight:'1vw'}}>
+                            <Nav.Link href={prefix + "/"}>Home</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li" style={{marginRight:'1vw'}}>
+                            <Nav.Link href={prefix + "/about"}>About Me</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <NavDropdown title="Projects">
+                        <NavDropdown.Item href={prefix + "/projects"}>
+                            ELLEvation
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href={prefix + "/projects"}>
+                            Reserv
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href={prefix + "/projects"}>
+                            MazeGame
+                        </NavDropdown.Item>
+                    </NavDropdown>
+                </div>
             </Container>
         </Navbar>
     );

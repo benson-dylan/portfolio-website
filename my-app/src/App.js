@@ -5,6 +5,7 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/Projects';
 import ELLEvation from './pages/ELLEvation';
+import AboutPage from './pages/AboutMe';
 import fish from './images/fish.png';
 
 const prefix = "/portfolio-website";
@@ -23,6 +24,7 @@ function App() {
             <Route path={prefix + "/"} element={<HomePage/>}/>
             <Route path={prefix + "/projects"} element={<ProjectPage/>}/>
             <Route path={prefix + "/projects/ellevation"} element={<ELLEvation/>}/>
+            <Route path={prefix + "/about"} element={<AboutPage/>}/>
           </Routes>
         </BrowserRouter>
       </html>
