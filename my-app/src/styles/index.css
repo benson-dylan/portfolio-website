@@ -8,10 +8,12 @@
     --my-black: #141313;
 }
 
+/*
+    MARK: Home Page
+*/
+
 .HomePage {
-    min-height: 200vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
     font-family: "Outfit", sans-serif;
 }
 
@@ -20,136 +22,89 @@
     max-height: 100vh;
     width: 100%;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
 }
 
-#HomeTop h1 {
-    position: relative;
-    top: 42vh;
-    font-family: "Outfit", sans-serif;
-}
-
-#HomeTwo {
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-    background-color: var(--my-black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-#HomeTwo h1 {
-    font-size: 40pt;
-    margin-top: -5%;
-    margin-bottom: 3%;
-    color: white;
-}
-
-#HomeThree {
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-#HomeThree h1 {
-    font-size: 40pt;
-    margin-top: -5%;
-    margin-bottom: 3%;
-}
-
-#offcanvas-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: var(--claret);
-    color: white;
-    z-index: 100;
-}
-
-#homepage-offcanvas {
-    background-color: var(--my-black) !important;
-    color: white;
-    width: 15%;
-}
-
-#homepage-offcanvas .btn-close {
-    filter: invert(1);
-    padding: 20px 20px;
-}
-
-#offcanvas-items {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin-left: 10%;
-    font-family: "Outfit", sans-serif;
-}
-
-.offcanvas-item {
-    font-size: 28pt;
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 2%;
-}
-
-.offcanvas-button:hover {
-    text-decoration: none;
-    transition: 0.5;
-}
-
-.HomePageCard {
-    width: 30vh;
-    background-color: var(--vermilion);
-}
-
-#cardButton {
-    max-width: 6vw;
-    margin: 15px 15px;
-    margin-top: -5px;
-    padding: 10px 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: var(--dark-slate);
-    color: white;
-}
-
-#CardHolder
+#HomePageContents
 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#HomeLeft
+{
+    width: 33vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
-    flex-wrap: wrap;
 }
 
-#socialDiv {
-    margin-top: 3%;
+#HomeLeftContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px lightgray;
 }
 
-.socialButton {
-    background-color: transparent;
-    border: none;
+#HomeLeftContainer span
+{
+    margin-bottom: 1vh;
+    text-align: center;
 }
 
-.socialIcon {
-    width: 48px;
-    height:48px;
+#AboutButton
+{
+    margin-top: 1vh;
+    padding: 15px 10px;
+    width: 21vw;
+    font-size: 14pt;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--vermilion);
+    color: white;
+}
+
+#HomeRight
+{
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.HomeRightContainer
+{
+    height: 28vh;
+    width: 55vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HomePageImg
+{
+    max-width: 20vw;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+
+#HomePageCaption
+{
+    font-size: 16pt;
 }
 
 /*
@@ -161,7 +116,7 @@
     width: 100%;
     height: 6vh;
     background-color: whitesmoke;
-    border-bottom: #141313;
+    border-bottom: 1px solid lightgray;
     border-width: 2px;
 }
 
@@ -174,10 +129,19 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
+/*
+    MARK: About Page
+*/
 
+#AboutPage
+{
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    background-color: whitesmoke;
+}
 
 /*
     MARK: Project Page 
@@ -186,4 +150,5 @@
 #ProjectPage {
     background-color: var(--cambridge-blue);
     height: 100vh;
+    font-family: "Outfit", sans-serif;
 }

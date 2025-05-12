@@ -1,11 +1,14 @@
 import React from "react";
 
 import NavigationBar from "../components/navbar";
+import '../styles/index.css';
 
 function AboutPage()
 {
     return(
-        <NavigationBar/>
+        <div id="AboutPage">
+            <NavigationBar/>
+        </div>
     );
 }
 
