@@ -37,7 +37,7 @@
 
 #HomeLeft
 {
-    width: 33vw;
+    width: 40vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -50,10 +50,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #HomeLeftContainer span
@@ -62,21 +58,39 @@
     text-align: center;
 }
 
+#HomePageCaption
+{
+    font-size: 16pt;
+    text-align: center;
+    margin-top: -3vh;
+    color: var(--dark-slate);
+}
+
 #AboutButton
 {
     margin-top: 1vh;
-    padding: 15px 10px;
-    width: 21vw;
+    padding: 15px 0;
+    min-width: 6vw;
+    width: 8vw;
+    max-width: 20vw;
     font-size: 14pt;
     border-radius: 10px;
     border: 0;
-    background-color: var(--vermilion);
+    background-color: var(--dark-slate);
     color: white;
+    margin-top: -1vh;
+}
+
+#HomeButtons
+{
+    display: flex;
+    flex-direction: row;
+    gap: .5vw;
 }
 
 #HomeRight
 {
-    width: 65vw;
+    width: 40vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -85,29 +99,20 @@
     gap: 5vh;
 }
 
-.HomeRightContainer
+#HomeRight h1
 {
-    height: 28vh;
-    width: 55vw;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 64pt;
+    color: var(--dark-slate);
 }
 
 #HomePageImg
 {
-    max-width: 20vw;
+    max-width: 22vw;
     margin-bottom: 2vh;
-    border-radius: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-#HomePageCaption
-{
-    font-size: 16pt;
-}
 
 /*
     MARK: Navigation Bar
@@ -132,6 +137,30 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 16pt;
+}
+
+#navSocials
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+}
+
+.navLogo
+{
+    background-color: transparent;
+    border: 0;
+}
+
+#githubLogo
+{
+    max-width: 48px;
+}
+
+#linkedinLogo
+{
+    max-width: 40px;
 }
 
 /*

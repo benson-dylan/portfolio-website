@@ -31,21 +31,24 @@ function HomePage()
                     <div id="HomeLeft">
                         <div id="HomeLeftContainer">
                             <img src={profile} id="HomePageImg"/>
-                            <span id="HomePageCaption">My name is Dylan Benson, a software developer with a <br/> passion for web development and video games</span>
+                        </div>
+                    </div>
+                    <div id="HomeRight">
+                        <h1>Dylan Benson</h1>
+                        <span id="HomePageCaption">A software engineer with a passion for <br/> web development and video games</span>
+                        <div id="HomeButtons">
                             <motion.button 
                                 id="AboutButton"
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
                                 onClick={() => navigate(prefix + "/about")}
                             >Get to know me!</motion.button>
-                        </div>
-                    </div>
-                    <div id="HomeRight">
-                        <div className="HomeRightContainer">
-                            <h1>TOP</h1>
-                        </div>
-                        <div className="HomeRightContainer">
-                            <h1>BOTTOM</h1>
+                            <motion.button 
+                                    id="AboutButton"
+                                    whileHover={{ scale: 1.03 }}
+                                    whileTap={{ scale: 0.97 }}
+                                    onClick={() => navigate(prefix + "/projects")}
+                            >My Projects</motion.button>
                         </div>
                     </div>
                 </motion.div>
