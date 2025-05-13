@@ -156,11 +156,25 @@
 #githubLogo
 {
     max-width: 48px;
+    opacity: .4;
+}
+
+#githubLogo:hover
+{
+    max-width: 48px;
+    opacity: .5;
 }
 
 #linkedinLogo
 {
-    max-width: 40px;
+    max-width: 48px;
+    opacity: .4;
+}
+
+#linkedinLogo:hover
+{
+    max-width: 48px;
+    opacity: .5;
 }
 
 /*
@@ -171,7 +185,57 @@
 {
     min-height: 100vh;
     font-family: "Outfit", sans-serif;
-    background-color: whitesmoke;
+    background-color: var(--cambridge-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutContent
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#AboutLeft
+{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutLeft h1
+{
+    font-size: 40pt;
+    margin-bottom: 2vh;
+    color: var(--dark-slate)
+}
+
+#AboutLeft p
+{
+    font-size: 16pt;
+    text-align: left;
+    width: 30vw;
+    color: var(--dark-slate)
+}
+
+#AboutRight
+{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutImg
+{
+    max-width: 20vw;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /*

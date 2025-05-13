@@ -4,8 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import "../styles/index.css";
 
-import github from "../images/github-grey.png";
-import linkedin from "../images/linkedin.png";
+import github from "../images/githubblack.png";
+import linkedin from "../images/linkedin-black.png";
 
 const prefix = "/portfolio-website";
 
@@ -34,10 +34,10 @@ function NavigationBar()
                     </Nav>
                 </div>
                 <div id="navSocials">
-                    <button className='navLogo' onClick={() => handleClick("https://github.com/benson-dylan")}>
+                    <button className='navLogo' alt="Black Github Logo" onClick={() => handleClick("https://github.com/benson-dylan")}>
                         <img id="githubLogo" src={github}/>
                     </button>
-                    <button className='navLogo' onClick={() => handleClick("https://www.linkedin.com/in/dylan-benson2/")}>
+                    <button className='navLogo' alt="Black LinkedIn Logo" onClick={() => handleClick("https://www.linkedin.com/in/dylan-benson2/")}>
                         <img id='linkedinLogo' src={linkedin}/>
                     </button>
                 </div>
