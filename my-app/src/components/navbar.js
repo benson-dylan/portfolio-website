@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import { useNavigate } from 'react-router-dom';
 import "../styles/index.css";
 
 import github from "../images/githubblack.png";
@@ -16,6 +17,8 @@ function NavigationBar()
         window.open(website, '_blank', 'noopener,noreferrer');
     };
 
+    const navigate = useNavigate();
+
     return(
         <Navbar className="navBar" fixed="top" expand="lg">
             <Container>
@@ -23,13 +26,13 @@ function NavigationBar()
                 <div className="navCenter">
                     <Nav>
                         <Nav.Item as="li" style={{marginRight:'1.2vw'}}>
-                            <Nav.Link href={prefix + "/"}>Home</Nav.Link>
+                            <Nav.Link onClick={() => navigate(prefix + "/")}>Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item as="li" style={{marginRight:'1.2vw'}}>
-                            <Nav.Link href={prefix + "/about"}>About Me</Nav.Link>
+                            <Nav.Link onClick={() => navigate(prefix + "/about")}>About Me</Nav.Link>
                         </Nav.Item>
                         <Nav.Item as="li">
-                            <Nav.Link href={prefix + "/projects"}>Projects</Nav.Link>
+                            <Nav.Link onClick={() => navigate(prefix + "/projects")}>Projects</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </div>
