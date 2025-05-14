@@ -22,7 +22,7 @@ function NavigationBar()
     return(
         <Navbar className="navBar" fixed="top" expand="lg">
             <Container>
-                <Navbar.Brand href={prefix + "/"} style={{fontSize:'18pt'}}>Dylan Benson</Navbar.Brand>
+                <Navbar.Brand href={prefix + "/"} style={{fontSize:'14pt'}}>Dylan Benson</Navbar.Brand>
                 <div className="navCenter">
                     <Nav>
                         <Nav.Item as="li" style={{marginRight:'1.2vw'}}>

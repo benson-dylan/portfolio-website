@@ -60,25 +60,28 @@
 
 #HomePageCaption
 {
-    font-size: 16pt;
+    font-size: 13pt;
     text-align: center;
-    margin-top: -3vh;
+    margin-top: -4.5vh;
     color: var(--dark-slate);
+    width: 20vw;
 }
 
 #AboutButton
 {
     margin-top: 1vh;
-    padding: 15px 0;
+    padding: 10px 0;
     min-width: 6vw;
     width: 8vw;
     max-width: 20vw;
-    font-size: 14pt;
-    border-radius: 10px;
+    font-size: 12pt;
+    border-radius: 50px;
     border: 0;
-    background-color: var(--dark-slate);
-    color: white;
-    margin-top: -1vh;
+    background-color: transparent;
+    border: 3px solid var(--dark-slate);
+    color: var(--dark-slate);
+    font-weight: bold;
+    margin-top: -2.5vh;
 }
 
 #HomeButtons
@@ -101,7 +104,7 @@
 
 #HomeRight h1
 {
-    font-size: 64pt;
+    font-size: 50pt;
     color: var(--dark-slate);
 }
 
@@ -121,7 +124,7 @@
 .navBar
 {
     width: 100%;
-    height: 6vh;
+    height: 6.5vh;
     background-color: var(--cambridge-blue);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-width: 2px;
@@ -136,7 +139,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 #navSocials
@@ -144,7 +147,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5vw;
+    width: 1vw;
 }
 
 .navLogo
@@ -155,26 +158,26 @@
 
 #githubLogo
 {
-    max-width: 48px;
-    opacity: .4;
+    max-width: 42px;
+    opacity: .5;
 }
 
 #githubLogo:hover
 {
-    max-width: 48px;
-    opacity: .5;
+    max-width: 42px;
+    opacity: .6;
 }
 
 #linkedinLogo
 {
-    max-width: 48px;
-    opacity: .4;
+    max-width: 42px;
+    opacity: .5;
 }
 
 #linkedinLogo:hover
 {
-    max-width: 48px;
-    opacity: .5;
+    max-width: 42px;
+    opacity: .6;
 }
 
 /*
@@ -209,14 +212,14 @@
 
 #AboutLeft h1
 {
-    font-size: 40pt;
+    font-size: 34pt;
     margin-bottom: 2vh;
     color: var(--dark-slate)
 }
 
 #AboutLeft p
 {
-    font-size: 16pt;
+    font-size: 13pt;
     text-align: left;
     width: 30vw;
     color: var(--dark-slate)
@@ -246,4 +249,56 @@
     background-color: var(--cambridge-blue);
     height: 100vh;
     font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ProjectCards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ArrowButton
+{
+    height: 5vh;
+    width: 2vw;
+}
+
+/*
+    MARK: Project Cards
+*/
+
+.CardContainer 
+{
+    height: 45vh;
+    width: 15vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardContainer h1
+{
+    font-size: 24pt;
+    color: white;
+}
+
+.CardButton
+{
+    width: 8vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--dark-slate);
+    color: white;
 }

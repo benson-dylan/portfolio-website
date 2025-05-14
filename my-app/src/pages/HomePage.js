@@ -35,7 +35,7 @@ function HomePage()
                     </div>
                     <div id="HomeRight">
                         <h1>Dylan Benson</h1>
-                        <span id="HomePageCaption">A software engineer with a passion for <br/> web development and video games</span>
+                        <span id="HomePageCaption">A software engineer with a passion for web development and video games</span>
                         <div id="HomeButtons">
                             <motion.button 
                                 id="AboutButton"
