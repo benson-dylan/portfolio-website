@@ -1,15 +1,24 @@
 import React from "react";
 import * as motion from "motion/react-client";
+import { useNavigate } from "react-router-dom";
 
 const prefix = "/portfolio-website";
 
+
+
 function ProjectCard(props)
 {
+    const navigate = useNavigate();
+
     return(
         <div className="CardContainer" style={{backgroundImage: `url(${props.bgImg})`}}>
-            <h1>{props.title}</h1>
+            <div id="CardHeaderContainer">
+                <h1>{props.title}</h1>
+            </div>
             <p></p>
-            <button className="CardButton" onClick={() => alert(prefix + props.url)}>{props.button}</button>
+            <div id="CardButtonContainer">
+                <button className="CardButton" onClick={() => navigate(prefix + props.url)}>Learn More</button>
+            </div>
         </div>
     );
 }
