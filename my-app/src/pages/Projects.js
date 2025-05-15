@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { useState } from 'react';
 import * as motion from "motion/react-client";
 
 import NavigationBar from '../components/navbar';
@@ -10,14 +10,16 @@ import "../styles/index.css";
 import ellevationThumb from "../images/ellevation-start.png";
 
 const cards = [
-    <ProjectCard id="ELLEvationCard" title="ELLEvation" url="/ellevation" bgImg={ellevationThumb}/>,
-    <ProjectCard id="NocturneCard" title="Project Nocturne" url="/nocturne"/>,
-    <ProjectCard id="ReservCard" title="Reserv" url="/reserv"/>,
-    <ProjectCard id="MazeGameCard"title="Maze Game" url="/maze"/>,
+    <ProjectCard id="ELLEvationCard" title="ELLEvation" url="/ellevation" bgImg={ellevationThumb} modalId={0}/>,
+    <ProjectCard id="NocturneCard" title="Project Nocturne" url="/nocturne" modalId={1}/>,
+    <ProjectCard id="ReservCard" title="Reserv" url="/reserv" modalId={2}/>,
+    <ProjectCard id="MazeGameCard"title="Maze Game" url="/maze" modalId={3}/>,
 ];
 
 function ProjectPage()
 {
+
+
     return(
         <div id="ProjectPage">
             <NavigationBar/>
