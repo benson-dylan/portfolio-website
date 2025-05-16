@@ -11,7 +11,7 @@ import ellevationThumb from "../images/ellevation-start.png";
 
 const cards = [
     <ProjectCard id="ELLEvationCard" title="ELLEvation" url="/ellevation" bgImg={ellevationThumb} modalId={0}/>,
-    <ProjectCard id="NocturneCard" title="Project Nocturne" url="/nocturne" modalId={1}/>,
+    <ProjectCard id="ImageProcessorCard" title="Image Processor" url="/nocturne" modalId={1}/>,
     <ProjectCard id="ReservCard" title="Reserv" url="/reserv" modalId={2}/>,
     <ProjectCard id="MazeGameCard"title="Maze Game" url="/maze" modalId={3}/>,
 ];

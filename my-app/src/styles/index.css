@@ -112,7 +112,7 @@
 
 #HomePageImg
 {
-    max-width: 22vw;
+    max-width: 25vw;
     margin-bottom: 2vh;
     border-radius: 50%;
     object-fit: cover;
@@ -241,7 +241,7 @@
 
 #AboutImg
 {
-    max-width: 20vw;
+    max-width: 25vw;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -360,7 +360,23 @@
 
 .ProjectModal
 {
+    width: 50vw;
     height: 30vh;
     overflow-y: auto;
+}
+
+.ProjectModal p
+{
+    margin-top: 2vh;
+}
+
+#Carousel
+{
+    width:40vw;
+}
+
+.CarouselImage
+{
+    width: 40vw;
 }
 

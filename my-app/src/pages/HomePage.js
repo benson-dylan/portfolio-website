@@ -6,7 +6,7 @@ import NavigationBar from '../components/navbar';
 
 import '../styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import profile from '../images/luffypfp.jpg';
+import profile from '../images/dylanpfp.jpg';
 
 const prefix = "/portfolio-website";
 

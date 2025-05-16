@@ -4,7 +4,7 @@ import * as motion from "motion/react-client";
 import NavigationBar from "../components/navbar";
 import '../styles/index.css';
 
-import aboutImg from "../images/luffypfp.jpg";
+import aboutImg from "../images/dylangradhead.jpg";
 
 function AboutPage()
 {
