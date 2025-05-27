@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.0c197631.css",
-    "main.js": "/portfolio-website/static/js/main.4443a398.js",
+    "main.css": "/portfolio-website/static/css/main.a4efbc2e.css",
+    "main.js": "/portfolio-website/static/js/main.da7e4085.js",
     "static/js/453.ed3810f9.chunk.js": "/portfolio-website/static/js/453.ed3810f9.chunk.js",
     "static/media/ellevationgame.png": "/portfolio-website/static/media/ellevationgame.b9282eb9d8164869dfbe.png",
+    "static/media/raytracer.png": "/portfolio-website/static/media/raytracer.dc1aed14869df280c8e5.png",
     "static/media/ellevationmenu.png": "/portfolio-website/static/media/ellevationmenu.b8064ec8923f60cb8a32.png",
     "static/media/ellevationtown.png": "/portfolio-website/static/media/ellevationtown.cee448c5cff9d015650f.png",
     "static/media/ellevationtitle.png": "/portfolio-website/static/media/ellevationtitle.6fe93c0df5a7aed872d9.png",
     "static/media/ellevation-start.png": "/portfolio-website/static/media/ellevation-start.77e3d9002d8164a1e5d0.png",
     "static/media/dylanpfp.jpg": "/portfolio-website/static/media/dylanpfp.4d7c4f844fd91585a1df.jpg",
     "static/media/dylangradhead.jpg": "/portfolio-website/static/media/dylangradhead.c34b589596317e502887.jpg",
+    "static/media/videocomp.png": "/portfolio-website/static/media/videocomp.4b830d2a56a643d8f519.png",
     "index.html": "/portfolio-website/index.html",
-    "main.0c197631.css.map": "/portfolio-website/static/css/main.0c197631.css.map",
-    "main.4443a398.js.map": "/portfolio-website/static/js/main.4443a398.js.map",
+    "main.a4efbc2e.css.map": "/portfolio-website/static/css/main.a4efbc2e.css.map",
+    "main.da7e4085.js.map": "/portfolio-website/static/js/main.da7e4085.js.map",
     "453.ed3810f9.chunk.js.map": "/portfolio-website/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c197631.css",
-    "static/js/main.4443a398.js"
+    "static/css/main.a4efbc2e.css",
+    "static/js/main.da7e4085.js"
   ]
 }
