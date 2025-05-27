@@ -273,8 +273,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
+}
+
+.ProjectListButton
+{
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.ProjectListButton#left
+{
+
+}
+
+.ProjectListButton#right
+{
+   margin-left: 30px; 
 }
 
 .ArrowButton

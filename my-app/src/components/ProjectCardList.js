@@ -24,12 +24,20 @@ const containerVariants = {
   },
 };
 
-function ProjectCardList({ cards })
+function ProjectCardList({ cards, startIdx })
 {
+    const maxCards = 4;
+    const total = cards.length;
+    const visibleCards = [];
+    for (let i = 0; i < maxCards; i++)
+    {
+        visibleCards.push(cards[(startIdx + i) % total]);
+    }
+
     return (
         <motion.ul id="ProjectCards" variants={containerVariants} initial="hidden" animate="visible">
-            {cards.map((card, index) => (
-                <motion.li className="CardListItem" key={index} variants={itemVariants}>
+            {visibleCards.map((card, index) => (
+                <motion.li className="CardListItem" key={startIdx + index} variants={itemVariants}>
                     {card}
                 </motion.li>
             ))}

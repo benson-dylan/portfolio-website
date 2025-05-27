@@ -151,6 +151,37 @@ function ProjectCard(props)
                     </p>
                 </Modal.Body>
             </Modal>
+            <Modal
+                show={openModalID === 4}
+                onHide={() => setOpenModalID(null)}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                id="RayTracerModal"
+                className="ProjectModal"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="ProjectModalTitle">
+                        Simple Ray Tracer
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>
+                        Simple ray tracer written in C++ designed to produce still images.<br/><br/>
+                        Employs various graphics techniques such as:<br/>
+                        - Camera <br/>
+                        - Sphere and Plane Rendering <br/>
+                        - Skybox <br/>
+                        - Area lights <br/>
+                        - Ambient, Diffuse, and Specular Shading <br/>
+                        - Reflections and Refractions <br/>
+                        - Random Sampling to create softer lighting and shadows <br/>
+                        - Anti-aliasing to reduce jagged edges <br/>
+                        - Post-processing bilateral filter to reduce noise created from random sampling <br/>
+
+                    </p>
+                </Modal.Body>
+            </Modal>
         </div>
     );
 }
