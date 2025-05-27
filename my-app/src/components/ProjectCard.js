@@ -16,6 +16,10 @@ function ProjectCard(props)
     const navigate = useNavigate();
     const [openModalID, setOpenModalID] = useState(null);
 
+    const handleClick = (website) => {
+        window.open(website, '_blank', 'noopener,noreferrer');
+    };
+
     return(
         <div className="CardContainer" style={{backgroundImage: `url(${props.bgImg})`}}>
             <div id="CardHeaderContainer">
@@ -102,6 +106,7 @@ function ProjectCard(props)
                         Found a significant decrease in runtime for all methods while maintaining operation fidelity.<br/>
                     </p>
                 </Modal.Body>
+                <button className="ModalButton" onClick={() => {handleClick("https://github.com/benson-dylan/ImageProcessor")}}>View Repository</button>
             </Modal>
             <Modal
                 show={openModalID === 2}
@@ -128,6 +133,7 @@ function ProjectCard(props)
                         Personally responsible for front-end development on the project. Employed a few external react libraries but most UI was developed entirely by our front-end team.<br/>
                     </p>
                 </Modal.Body>
+                <button className="ModalButton" onClick={() => {handleClick("https://github.com/vidaang/Reserv")}}>View Repository</button>
             </Modal>
             <Modal
                 show={openModalID === 3}
@@ -181,6 +187,28 @@ function ProjectCard(props)
 
                     </p>
                 </Modal.Body>
+                <button className="ModalButton" onClick={() => {handleClick("https://github.com/benson-dylan/simpleraytracer")}}>View Repository</button>
+            </Modal>
+            <Modal
+                show={openModalID === 5}
+                onHide={() => setOpenModalID(null)}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                id="RayTracerModal"
+                className="ProjectModal"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="ProjectModalTitle">
+                        Discord Video Compressor
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>
+
+                    </p>
+                </Modal.Body>
+                <button className="ModalButton" onClick={() => {handleClick("https://github.com/benson-dylan/Discord-Video-Compressor")}}>View Repository</button>
             </Modal>
         </div>
     );

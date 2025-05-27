@@ -387,6 +387,16 @@
     margin-top: 2vh;
 }
 
+.ModalButton 
+{
+    height: 5vh;
+    width: 8vw;
+    margin: 20px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: "Outfit";
+}
+
 #Carousel
 {
     width:40vw;
