@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.a4efbc2e.css",
-    "main.js": "/portfolio-website/static/js/main.da7e4085.js",
+    "main.css": "/portfolio-website/static/css/main.cc03e714.css",
+    "main.js": "/portfolio-website/static/js/main.b949437b.js",
     "static/js/453.ed3810f9.chunk.js": "/portfolio-website/static/js/453.ed3810f9.chunk.js",
+    "static/media/rtsky.png": "/portfolio-website/static/media/rtsky.aa8acf8860ff621705e8.png",
+    "static/media/rtmetal.png": "/portfolio-website/static/media/rtmetal.6f561b0ac79ec22885f4.png",
     "static/media/ellevationgame.png": "/portfolio-website/static/media/ellevationgame.b9282eb9d8164869dfbe.png",
+    "static/media/rtdiffuse.png": "/portfolio-website/static/media/rtdiffuse.08c2bb6bf587471f5247.png",
     "static/media/raytracer.png": "/portfolio-website/static/media/raytracer.dc1aed14869df280c8e5.png",
     "static/media/ellevationmenu.png": "/portfolio-website/static/media/ellevationmenu.b8064ec8923f60cb8a32.png",
+    "static/media/rtsharp.png": "/portfolio-website/static/media/rtsharp.f4bf1cae5e253d4c3d43.png",
     "static/media/ellevationtown.png": "/portfolio-website/static/media/ellevationtown.cee448c5cff9d015650f.png",
+    "static/media/rtnoshadows.png": "/portfolio-website/static/media/rtnoshadows.e5be72dc6e8ce23ba456.png",
     "static/media/ellevationtitle.png": "/portfolio-website/static/media/ellevationtitle.6fe93c0df5a7aed872d9.png",
     "static/media/ellevation-start.png": "/portfolio-website/static/media/ellevation-start.77e3d9002d8164a1e5d0.png",
+    "static/media/rtspecular.png": "/portfolio-website/static/media/rtspecular.e55bf04900b9a0dec242.png",
     "static/media/dylanpfp.jpg": "/portfolio-website/static/media/dylanpfp.4d7c4f844fd91585a1df.jpg",
     "static/media/dylangradhead.jpg": "/portfolio-website/static/media/dylangradhead.c34b589596317e502887.jpg",
+    "static/media/javalogo.png": "/portfolio-website/static/media/javalogo.2612422deb1ef005bcaa.png",
     "static/media/videocomp.png": "/portfolio-website/static/media/videocomp.4b830d2a56a643d8f519.png",
     "index.html": "/portfolio-website/index.html",
-    "main.a4efbc2e.css.map": "/portfolio-website/static/css/main.a4efbc2e.css.map",
-    "main.da7e4085.js.map": "/portfolio-website/static/js/main.da7e4085.js.map",
+    "main.cc03e714.css.map": "/portfolio-website/static/css/main.cc03e714.css.map",
+    "main.b949437b.js.map": "/portfolio-website/static/js/main.b949437b.js.map",
     "453.ed3810f9.chunk.js.map": "/portfolio-website/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4efbc2e.css",
-    "static/js/main.da7e4085.js"
+    "static/css/main.cc03e714.css",
+    "static/js/main.b949437b.js"
   ]
 }
