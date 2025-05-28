@@ -10,14 +10,17 @@ import "../styles/index.css";
 import ellevationThumb from "../images/ellevation-start.png";
 import raytracerThumb from "../images/raytracer.png";
 import compressorThumb from "../images/videocomp.png";
+import reservThumb from '../images/reservlogo.png';
+import imgprocThumb from '../images/javalogo.png';
 
 const cards = [
     <ProjectCard id="ELLEvationCard" title="ELLEvation" url="/ellevation" bgImg={ellevationThumb} modalId={0}/>,
-    <ProjectCard id="ImageProcessorCard" title="Image Processor" url="/nocturne" modalId={1}/>,
-    <ProjectCard id="ReservCard" title="Reserv" url="/reserv" modalId={2}/>,
+    <ProjectCard id="ImageProcessorCard" title="Image Processor" url="/imageprocessor" bgImg={imgprocThumb} modalId={1}/>,
+    <ProjectCard id="ReservCard" title="Reserv" url="/reserv" bgImg={reservThumb} modalId={2}/>,
     <ProjectCard id="RayTracerCard"title="Simple Ray Tracer" url="/raytracer" bgImg={raytracerThumb} modalId={4}/>,
     <ProjectCard id="MazeGameCard"title="Maze Game" url="/maze" modalId={3}/>,
     <ProjectCard id="VideoCompressorCard"title="Video Compressor" bgImg={compressorThumb} modalId={5}/>,
+    <ProjectCard id="ProjectNocturneCard"title="Project Nocturne" modalId={6}/>,
 ];
 
 function ProjectPage()

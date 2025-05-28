@@ -282,6 +282,7 @@
     font-weight: bold;
     font-size: 20px;
     background-color: transparent;
+    padding-bottom: 4px;
 }
 
 .ProjectListButton#left
@@ -294,11 +295,6 @@
    margin-left: 30px; 
 }
 
-.ArrowButton
-{
-    height: 5vh;
-    width: 2vw;
-}
 
 /*
     MARK: Project Cards
@@ -318,6 +314,9 @@
     gap: 14vh;
     background-size: 110%;
     background-position: 40% 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .CardContainer h1
@@ -404,6 +403,8 @@
 
 .CarouselImage
 {
+    max-height: 50vh;
     width: 40vw;
+    object-fit: cover;
 }
 

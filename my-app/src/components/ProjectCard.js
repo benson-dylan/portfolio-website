@@ -4,10 +4,21 @@ import * as motion from "motion/react-client";
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 import { useNavigate } from "react-router-dom";
+
+// ELLEvation images
 import ellevationGame from '../images/ellevationgame.png';
 import ellevationMenu from '../images/ellevationmenu.png';
 import ellevationTitle from '../images/ellevationtitle.png';
 import ellevationTown from '../images/ellevationtown.png';
+
+// Ray Tracer images
+import rtdiffuse from '../images/raytracer/rtdiffuse.png';
+import rtspecular from '../images/raytracer/rtspecular.png';
+import rtnoshadow from '../images/raytracer/rtnoshadows.png';
+import rtfull from '../images/raytracer.png';
+import rtsharp from '../images/raytracer/rtsharp.png';
+import rtsky from '../images/raytracer/rtsky.png';
+import rtmetal from '../images/raytracer/rtmetal.png';
 
 const prefix = "/portfolio-website";
 
@@ -156,6 +167,7 @@ function ProjectCard(props)
                         To create this game we utilized PyOpenGL to create our own small game graphics engine to create wall meshes, render them, and map textures. Billboard techniques were employed for all other asset types in the game. We used GLSL to write our vertex and fragment shaders as well as place lights around the map with real time point lighting. Additionally, the player character was given a flashlight for darker moments in the game.<br/>
                     </p>
                 </Modal.Body>
+                <button className="ModalButton" onClick={() => {handleClick("https://github.com/benson-dylan/MazeGame")}}>View Repository</button>
             </Modal>
             <Modal
                 show={openModalID === 4}
@@ -172,8 +184,32 @@ function ProjectCard(props)
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+                    <Carousel id="Carousel" fade>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtdiffuse}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtspecular}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtnoshadow}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtsharp}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtfull}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtsky}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="CarouselImage" src={rtmetal}/>
+                        </Carousel.Item>
+                    </Carousel>
                     <p>
-                        Simple ray tracer written in C++ designed to produce still images.<br/><br/>
+                        Simple ray tracer written in C++ designed to produce still images.<br/>
+                        My first small project in C++, applying graphics programming knowledge I gained in other languages.<br/><br/>
                         Employs various graphics techniques such as:<br/>
                         - Camera <br/>
                         - Sphere and Plane Rendering <br/>
